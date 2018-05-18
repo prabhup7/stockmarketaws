@@ -18,6 +18,13 @@
     }
   });
 
+	use stock-market;
+	db.createUser(
+	  {
+	   user: "root", #desired username
+	   pwd: "7Dfwua0cYl7Z", #desired password
+	   roles: [ "readWrite"]
+	  })
 
 	// mongoose.connect('mongodb://localhost/stock-market')
 	// .then(() => {
