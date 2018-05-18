@@ -33,7 +33,7 @@
 	//     console.log('Could not connect to the database. Exiting now...');
 	// });
 
-	mongoose.connect('mongodb://stock:stock@ec2-54-218-107-149.us-west-2.compute.amazonaws.com:27017/stock-market')
+	mongoose.connect('mongodb://stockm:stockm@ec2-54-218-107-149.us-west-2.compute.amazonaws.com:27017/stock-market')
 	.then(() => {
 			console.log(" MongoDB Successfully connected to the database");
 	}).catch(err => {
