@@ -26,13 +26,13 @@
 	//     console.log('Could not connect to the database. Exiting now...');
 	// });
 
-	mongoose.connect('mongodb://root:7Dfwua0cYl7Z@localhost:3000/stock-market')
+	mongoose.connect('mongodb://root:7Dfwua0cYl7Z@localhost:27017/stock-market')
 	.then(() => {
 			console.log(" MongoDB Successfully connected to the database");
 	}).catch(err => {
 			console.log('Could not connect to the database. Exiting now...');
 	});
-	mongoose.connect('mongodb://root:7Dfwua0cYl7Z@localhost:3000/stock-market')
+
 	mongoose.Promise = global.Promise;
 
 
