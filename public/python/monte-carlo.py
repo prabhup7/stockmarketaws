@@ -62,4 +62,4 @@ for run in range(100):
 plt.xlabel("Days")
 plt.ylabel("Price")
 plt.title('Monte Carlo Analysis for '+abbrevation)
-plt.savefig('/Users/prabhutej/Downloads/stock-market/public/images/MonteCarlo.png')
+plt.savefig('/home/bitnami/apps/stockmarketaws/public/images/MonteCarlo.png')

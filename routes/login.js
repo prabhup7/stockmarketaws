@@ -235,7 +235,7 @@
     var options = {
       mode: 'text',
       pythonOptions: ['-u'],
-      scriptPath: '/Users/prabhutej/Downloads/stock-market/public/python',
+      scriptPath: '/home/bitnami/apps/stockmarketaws/public/python',
       args: [company]
     };
       console.log('inside technical analysis');

@@ -94,5 +94,5 @@ plt.axvline(x=q, linewidth=4, color='r')
 
 # For plot title
 plt.title(s="Final price distribution for "+abbrevation+" after %s days" % days, weight='bold', color='Y')
-plt.savefig('/Users/prabhutej/Downloads/stock-market/public/images/Risk.png')
+plt.savefig('/home/bitnami/apps/stockmarketaws/public/images/Risk.png')
    

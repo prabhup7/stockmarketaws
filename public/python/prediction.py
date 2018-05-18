@@ -15,9 +15,9 @@ import matplotlib.pyplot as plt
 x=A['Closing Price']
 y=A['Date']
 A.plot(x='Date', y='Closing Price')
-plt.savefig('/Users/prabhutej/Downloads/stock-market/public/images/ClosingPrice.png')
+plt.savefig('/home/bitnami/apps/stockmarketaws/public/images/ClosingPrice.png')
 A.plot(x='Date', y='Volume')
-plt.savefig('/Users/prabhutej/Downloads/stock-market/public/images/Volume.png')
+plt.savefig('/home/bitnami/apps/stockmarketaws/public/images/Volume.png')
 MA_day = [10,20,50,100]
 
 for ma in MA_day:
@@ -26,5 +26,5 @@ for ma in MA_day:
 A.set_index(pd.DatetimeIndex(A['Date']), inplace=True)
 #A[['Closing Price','MA for 10 days','MA for 20 days','MA for 50 days','MA for 100 days']].plot(subplots=False,figsize=(10,4))
 A[['Closing Price','MA for 10 days','MA for 20 days','MA for 50 days','MA for 100 days']].plot(subplots=False,figsize=(10,4))
-plt.savefig('/Users/prabhutej/Downloads/stock-market/public/images/Moving-Average.png')
+plt.savefig('/home/bitnami/apps/stockmarketaws/public/images/Moving-Average.png')
    
