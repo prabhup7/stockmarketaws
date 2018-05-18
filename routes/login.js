@@ -18,13 +18,13 @@
     }
   });
 
-	use stock-market;
-	db.createUser(
-	  {
-	   user: "root", #desired username
-	   pwd: "7Dfwua0cYl7Z", #desired password
-	   roles: [ "readWrite"]
-	  })
+	// use stock-market;
+	// db.createUser(
+	//   {
+	//    user: "root", #desired username
+	//    pwd: "7Dfwua0cYl7Z", #desired password
+	//    roles: [ "readWrite"]
+	//   })
 
 	// mongoose.connect('mongodb://localhost/stock-market')
 	// .then(() => {
@@ -33,7 +33,7 @@
 	//     console.log('Could not connect to the database. Exiting now...');
 	// });
 
-	mongoose.connect('mongodb://root:7Dfwua0cYl7Z@localhost:27017/stock-market, {auth:{authdb:"admin"}}')
+	mongoose.connect('mongodb://stock:stock@ec2-54-218-107-149.us-west-2.compute.amazonaws.com:27017/stock-market, {auth:{authdb:"admin"}}')
 	.then(() => {
 			console.log(" MongoDB Successfully connected to the database");
 	}).catch(err => {
