@@ -17,15 +17,25 @@
       console.log(' MySQL Database connection successful');
     }
   });
-	
 
-	mongoose.connect('mongodb://localhost/stock-market')
+
+	// mongoose.connect('mongodb://localhost/stock-market')
+	// .then(() => {
+	//     console.log(" MongoDB Successfully connected to the database");
+	// }).catch(err => {
+	//     console.log('Could not connect to the database. Exiting now...');
+	// });
+
+	mongoose.connect('mongodb://root:7Dfwua0cYl7Z@localhost:3000/stock-market')
 	.then(() => {
-	    console.log(" MongoDB Successfully connected to the database");    
+			console.log(" MongoDB Successfully connected to the database");
 	}).catch(err => {
-	    console.log('Could not connect to the database. Exiting now...');
+			console.log('Could not connect to the database. Exiting now...');
 	});
+	mongoose.connect('mongodb://root:7Dfwua0cYl7Z@localhost:3000/stock-market')
 	mongoose.Promise = global.Promise;
+
+
 
 
 	var user = mongoose.Schema({
@@ -39,7 +49,7 @@
 
 	exports.login = function(req, res){
 		     res.render('login',{});
-		 
+
   };
 
   exports.logout = function(req,res)
@@ -72,7 +82,7 @@
 	  			console.log(records[0].firstName);
 	  			firstName=records[0].firstName;
 	  			req.session.firstName=firstName;
-	  			req.session.lastName=records[0].lastName;	
+	  			req.session.lastName=records[0].lastName;
 	  			req.session.email=records[0].email;
 	  			sendObj.status=200;
 	  			res.send(sendObj);
@@ -87,8 +97,8 @@
 
   	});
 
-	
-		 
+
+
   };
 
   exports.registerUser = function(req,res){
@@ -117,7 +127,7 @@
 			res.send(sendObj);
 		}
   		else{
-  		  console.log(records);	
+  		  console.log(records);
   		  var sign = new registerModel();
         sign.password = password;
         sign.email = email;
@@ -126,8 +136,8 @@
     	  sign.phoneNumber=phoneNumber;
         sign.save(function(err) {
           if (err){
-            console.log('Error in Saving user: '+err);  
-            throw err;  
+            console.log('Error in Saving user: '+err);
+            throw err;
           }
           nodemailer.createTestAccount((err, account) => {
     var transporter = nodemailer.createTransport({
@@ -152,12 +162,12 @@
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
     });
-});	
+});
           sendObj.status=200;
 		      res.send(sendObj);
           res.render('userhome',{"firstName":req.session.firstName,"lastName":req.session.lastName});
           console.log('User inserted');
-        });	
+        });
   		}
   	});
 
@@ -191,20 +201,20 @@
   			throw err;
 
   		}
-  		else{	
+  		else{
   				var firstName=records[0].firstName;
   				var lastName=records[0].lastName;
   				var email=records[0].email;
   				var phoneNumber=records[0].phoneNumber;
 	  			res.render('userprofile',{firstName:req.session.firstName,lastName:req.session.lastName,email:email,phoneNumber:phoneNumber});
   			}
-  			
+
   		});
 	};
 
   exports.companyanalysis = function(req,res){
         res.render('companyanalysis',{"firstName":req.session.firstName,"lastName":req.session.lastName});
-        
+
   };
 
   exports.company = function(req,res){
@@ -224,7 +234,7 @@
         //res.render('companyanalysis',{"firstName":req.session.firstName,"lastName":req.session.lastName,"companies":records});
         res.send(sendObj);
         }
-      
+
     });
   };
 
@@ -240,7 +250,7 @@
     };
       console.log('inside technical analysis');
       PythonShell.run('prediction.py', options, function (err, results) {
-      console.log('before script1');  
+      console.log('before script1');
       if (err){
         console.log('ERR:'+err);
        //throw err;
@@ -261,12 +271,11 @@
       });
 
       });
-      
+
      };
 
 
  exports.prediction = function(req,res){
         res.render('technicalanalysis',{"firstName":req.session.firstName,"lastName":req.session.lastName});
-        
+
   };
-  	
