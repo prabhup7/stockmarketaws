@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Title-->
+    <title>Home - Shop list</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/preset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" id="triggerColor" href="assets/css/colors/solid/color.css">
+    <link rel="stylesheet" id="grad_triggerColor" href="assets/css/colors/gradient/color.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <!-- Color Preset -->
+    <div class="rishad_switcher_zone">
+        <div class="switZone_title">
+            <p class="pull-left">Select a Color</p>
+            <a href="#" class="settingBtn pull-right"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            <div class="clearfix"></div>
+        </div>
+        <div class="rishad_switcher_inner">
+            <div class="rishad_switcher_single">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a href="#gradient" class="nav-link active" data-toggle="tab">Gradient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#solid" class="stopped-color nav-link" data-toggle="tab">Solid</a>
+                    </li>                    
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="gradient">
+                        <div class="rishad_switch grad_color" id="grad_actionColors">
+                            <a href="color" class="color-default active"></a>
+                            <a href="color-1" class="color1"></a>
+                            <a href="color-2" class="color2"></a>
+                            <a href="color-3" class="color3"></a>
+                            <a href="color-4" class="color4"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="solid">
+                        <div class="rishad_switch" id="actionColors">
+                            <a href="color" class="color-default active"></a>
+                            <a href="color-1" class="color1"></a>
+                            <a href="color-2" class="color2"></a>
+                            <a href="color-3" class="color3"></a>
+                            <a href="color-4" class="color4"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Color Preset -->
+    
+
+    <!--navbar-->
+    <nav class="navbar navbar-toggleable-md fixed-top navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+      </button>
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/images/logo.png" alt="Logo"></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center mx-auto">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.html">Home 1</a>
+                        <a class="dropdown-item" href="index_v2.html">Home 2</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">News</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="single.html">Single</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="shop-grid.html">Shop Grid</a>
+                        <a class="dropdown-item active" href="shop-list.html">Shop List</a>
+                        <a class="dropdown-item" href="product.html">Product</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="join-btn" type="button">Join Now</button>
+            </form>
+        </div>
+    </nav>
+    <!--/.navbar-->
+
+    <!--breadcrumb-banner-->
+    <section class="breadcrumb-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Shop</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active"><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.breadcrumb-banner-->
+
+    <section class="shop-list">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4 col-md-5">
+                    <p class="shop-result-count"><span>Showing 1–12</span> of 126 results</p>
+                </div>
+                <div class="col-lg-5 col-md-7 offset-lg-3">
+                    <ul class="list-inline pull-right shop-sorting">
+                        <li class="list-inline-item"><a href="shop-grid.html"><i class="fa fa-th"></i></a></li>
+                        <li class="list-inline-item active"><a href="shop-list.html"><i class="fa fa-th-list"></i></a></li>
+                        <li class="list-inline-item">
+                            <form class="ordering" method="get">
+                                <select name="orderby" class="orderby">
+                                <option selected="selected" value="popularity">Sort by popularity</option>
+                                <option value="rating">Sort by average rating</option>
+                                <option value="date">Sort by newness</option>
+                                <option value="price">Sort by price: low to high</option>
+                                <option value="price-desc">Sort by price: high to low</option>
+                            </select>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--sidebar-->
+                <div class="col-lg-4 shop-sidebar">
+                    <div class="hidden-md-down">
+                    <div class="widget widget_search">
+                        <form action="#">
+                            <input type="search" class="search-field" placeholder="Search …">
+                            <button type="submit" class="search-submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="widget widget_recent_posts">
+                        <h5 class="widget-title">Recent Product</h5>
+                        <ul>
+                            <li>
+                                <a class="row" href="#">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/1.png" alt="image">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>Libero, quisquam voluptatibus totam.</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="row" href="#">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/2.png" alt="image">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>Consectetur adipisicing elit</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="row" href="#">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/3.png" alt="image">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>adipisicing elit. Libero, quisquam voluptatibus.</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="row" href="#">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/4.png" alt="image">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>voluptatibus totam.</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="row" href="#">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/5.png" alt="image">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>elit. Libero, quisquam voluptatibus totam.</h6>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="widget widget_tag_cloud">
+                        <h5 class="widget-title">Tags</h5>
+                        <div class="tagcloud">
+                            <a href="#">BTC</a>
+                            <a href="#">Miner</a>
+                            <a href="#">Rameon</a>
+                            <a href="#">GeForce</a>
+                            <a href="#">Ventu</a>
+                            <a href="#">XFX</a>
+                            <a href="#">XLR8</a>
+                            <a href="#">Altcoin</a>
+                            <a href="#">BTC</a>
+                            <a href="#">Miner</a>
+                            <a href="#">Rameon</a>
+                            <a href="#">GeForce</a>
+                            <a href="#">Ventu</a>
+                            <a href="#">XFX</a>
+                            <a href="#">XLR8</a>
+                            <a href="#">Altcoin</a>
+                        </div>
+                    </div>
+
+                    <div class="widget widget_archive">
+                        <h5 class="widget-title">Archives</h5>
+                        <ul>
+                            <li><a href="#">December 2018</a></li>
+                            <li><a href="#">September 2018</a></li>
+                            <li><a href="#">April 2018</a></li>
+                            <li><a href="#">January 2018</a></li>
+                            <li><a href="#">November 2018</a></li>
+                            <li><a href="#">January 2018</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget widget_recent_comments">
+                        <h5 class="widget-title">Categories</h5>
+                        <ul>
+                            <li><a href="#">Trading</a></li>
+                            <li><a href="#">Mining</a></li>
+                            <li><a href="#">ICO</a></li>
+                            <li><a href="#">Wallet</a></li>
+                            <li><a href="#">BitCoin</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget widget_meta">
+                        <h5 class="widget-title">Meta</h5>
+                        <ul>
+                            <li><a href="#">Site Admin</a></li>
+                            <li><a href="#">Log out</a></li>
+                            <li><a href="#">Entries <abbr>RSS</abbr></a></li>
+                            <li><a href="#">Comments <abbr>RSS</abbr></a></li>
+                            <li><a href="#">WordPress.org</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 shop-list-product">
+                    <div class="row product-item-list">
+                        <div class="col-sm-4">
+                            <div class="product-item-img">
+                                <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/1.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="product-item-title">
+                                <h4>One – XLR8 Nvida GeForce GDDR</h4>
+                            </div>
+
+                            <div class="product-item-retings">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star-o"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-item-price">
+                                <b>$537</b>
+                            </div>
+
+                            <div class="product-item-excerpt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia suscipit vel eos repellat obcaecati non laborum explicabo cupiditate fugiat.</p>
+                            </div>
+                            <div class="product-item-btn">
+                                <a href="#"><i class="fa fa-lg fa-shopping-cart "></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row product-item-list">
+                        <div class="col-sm-4">
+                            <div class="product-item-img">
+                                <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/2.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="product-item-title">
+                                <h4>Magnum – Nvida GeForce GTX Ti 4GB</h4>
+                            </div>
+
+                            <div class="product-item-retings">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star-o"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-item-price">
+                                <b>$570</b>
+                            </div>
+
+                            <div class="product-item-excerpt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia suscipit vel eos repellat obcaecati non laborum explicabo cupiditate fugiat.</p>
+                            </div>
+                            <div class="product-item-btn">
+                                <a href="#"><i class="fa fa-lg fa-shopping-cart "></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row product-item-list">
+                        <div class="col-sm-4">
+                            <div class="product-item-img">
+                                <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/3.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="product-item-title">
+                                <h4>XFX – AMD Rameon R 220 2GB DDR</h4>
+                            </div>
+
+                            <div class="product-item-retings">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star-o"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-item-price">
+                                <b>$653</b>
+                            </div>
+
+                            <div class="product-item-excerpt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia suscipit vel eos repellat obcaecati non laborum explicabo cupiditate fugiat.</p>
+                            </div>
+                            <div class="product-item-btn">
+                                <a href="#"><i class="fa fa-lg fa-shopping-cart "></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row product-item-list">
+                        <div class="col-sm-4">
+                            <div class="product-item-img">
+                                <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/4.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="product-item-title">
+                                <h4>PNY – Nvida GeForce GT 2GB</h4>
+                            </div>
+
+                            <div class="product-item-retings">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star-o"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star-o"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star-o"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-item-price">
+                                <b>$790</b>
+                            </div>
+
+                            <div class="product-item-excerpt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia suscipit vel eos repellat obcaecati non laborum explicabo cupiditate fugiat.</p>
+                            </div>
+                            <div class="product-item-btn">
+                                <a href="#"><i class="fa fa-lg fa-shopping-cart "></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row product-item-list">
+                        <div class="col-sm-4">
+                            <div class="product-item-img">
+                                <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/5.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="product-item-title">
+                                <h4>PNY – Ventu Nvida GeForce GT</h4>
+                            </div>
+
+                            <div class="product-item-retings">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star-o"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star-o"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-item-price">
+                                <b>$337</b>
+                            </div>
+
+                            <div class="product-item-excerpt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia suscipit vel eos repellat obcaecati non laborum explicabo cupiditate fugiat.</p>
+                            </div>
+                            <div class="product-item-btn">
+                                <a href="#"><i class="fa fa-lg fa-shopping-cart "></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row product-item-list">
+                        <div class="col-sm-4">
+                            <div class="product-item-img">
+                                <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/products/6.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="product-item-title">
+                                <h4>XFX – AMD Rameon RX 4GB</h4>
+                            </div>
+
+                            <div class="product-item-retings">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-lg fa-star"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-item-price">
+                                <b>$800</b>
+                            </div>
+
+                            <div class="product-item-excerpt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia suscipit vel eos repellat obcaecati non laborum explicabo cupiditate fugiat.</p>
+                            </div>
+                            <div class="product-item-btn">
+                                <a href="#"><i class="fa fa-lg fa-shopping-cart "></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Get in Touch</h5>
+                            <div class="widget_content">
+                                <ul>
+                                    <li><i class="fa fa-lg fa-map-marker"></i>125 East 11th Street, Parkway Nashville 22536</li>
+                                    <li><i class="fa fa-lg fa-mobile"></i>+123 4567 890</li>
+                                    <li><i class="fa fa-lg fa-envelope-o"></i>info@example.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Important links</h5>
+                            <div class="widget_content">
+                                <ul>
+                                    <li><a href="#">Bitcoin Mining</a></li>
+                                    <li><a href="#">Bitcoin Earning</a></li>
+                                    <li><a href="#">Investment</a></li>
+                                    <li><a href="#">Referral</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Recent Post</h5>
+                            <div class="widget_content">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="widget_recent_post">
+                                                <div class="widget_recent_post_img">
+                                                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog5.jpeg" alt="Image">
+                                                </div>
+                                                <div class="widget_recent_post_content">
+                                                    <h6>Laborum deleniti sequi, consequuntur</h6>
+                                                    <small>12 dec 2017</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="widget_recent_post">
+                                                <div class="widget_recent_post_img">
+                                                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog2.jpeg" alt="Image">
+                                                </div>
+                                                <div class="widget_recent_post_content">
+                                                    <h6>Deleniti sequi, consequuntur</h6>
+                                                    <small>16 dec 2017</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Newsletter</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div class="widget_content">
+                                <form action="#">
+                                    <input type="email">
+                                    <input type="submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Home</a></li>
+                            <li class="list-inline-item"><a href="#">About</a></li>
+                            <li class="list-inline-item"><a href="#">Services</a></li>
+                            <li class="list-inline-item"><a href="#">Team</a></li>
+                            <li class="list-inline-item"><a href="#">Blog</a></li>
+                            <li class="list-inline-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="pull-right">All Right Reserved by <a href="codecorns.com">CodeCorns</a> © 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
+
+    <!--======= Back to Top =======-->
+
+    <div id="backtotop"><i class="fa fa-2x fa-arrow-up"></i></div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/countdown.js"></script> -->
+    <script src="assets/js/jquery-waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <!-- <script src="assets/js/google-map.js"></script> -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myApp" data-ng-controller="myCtrl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Title-->
+    <title>Home - Pricing</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/preset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" id="triggerColor" href="assets/css/colors/solid/color.css">
+    <link rel="stylesheet" id="grad_triggerColor" href="assets/css/colors/gradient/color.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <!-- Color Preset -->
+    <div class="rishad_switcher_zone">
+        <div class="switZone_title">
+            <p class="pull-left">Select a Color</p>
+            <a href="#" class="settingBtn pull-right"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            <div class="clearfix"></div>
+        </div>
+        <div class="rishad_switcher_inner">
+            <div class="rishad_switcher_single">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a href="#gradient" class="nav-link active" data-toggle="tab">Gradient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#solid" class="stopped-color nav-link" data-toggle="tab">Solid</a>
+                    </li>                    
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="gradient">
+                        <div class="rishad_switch grad_color" id="grad_actionColors">
+                            <a href="color" class="color-default active"></a>
+                            <a href="color-1" class="color1"></a>
+                            <a href="color-2" class="color2"></a>
+                            <a href="color-3" class="color3"></a>
+                            <a href="color-4" class="color4"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="solid">
+                        <div class="rishad_switch" id="actionColors">
+                            <a href="color" class="color-default active"></a>
+                            <a href="color-1" class="color1"></a>
+                            <a href="color-2" class="color2"></a>
+                            <a href="color-3" class="color3"></a>
+                            <a href="color-4" class="color4"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Color Preset -->
+    
+
+    <!--navbar-->
+    <nav class="navbar navbar-toggleable-md fixed-top navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+      </button>
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/images/logo.png" alt="Logo"></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center mx-auto">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.html">Home 1</a>
+                        <a class="dropdown-item" href="index_v2.html">Home 2</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">News</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="single.html">Single</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="shop-grid.html">Shop Grid</a>
+                        <a class="dropdown-item" href="shop-list.html">Shop List</a>
+                        <a class="dropdown-item" href="product.html">Product</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="about.html">About</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="pricing.html">Pricing</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="join-btn" type="button">Join Now</button>
+            </form>
+        </div>
+    </nav>
+    <!--/.navbar-->
+
+
+    <!--breadcrumb-banner-->
+    <section class="breadcrumb-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Pricing</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.breadcrumb-banner-->
+
+    <!--pricing-->
+    <section id="pricing" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title text-center">
+                        <h1>Buy Different Price of Bitcoin</h1>
+                    </div>
+                    <div class="white-space" style="padding: 35px 0"></div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="pricing">
+                        <span>$5518</span>
+                        <h4>0.5 Bitcoins</h4>
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="pricing">
+                        <span>$11000</span>
+                        <h4>1 Bitcoins</h4>
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="pricing">
+                        <span>$16884</span>
+                        <h4>1.5 Bitcoins</h4>
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="pricing">
+                        <span>$22000</span>
+                        <h4>2 Bitcoins</h4>
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="pricing">
+                        <span>$5518</span>
+                        <h4>0.5 Bitcoins</h4>
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="pricing">
+                        <span>$11000</span>
+                        <h4>1 Bitcoins</h4>
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="pricing">
+                        <span>$16884</span>
+                        <h4>1.5 Bitcoins</h4>
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="pricing">
+                        <span>$22000</span>
+                        <h4>2 Bitcoins</h4>
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#pricing-->
+
+    <!--section-->
+    <section class="section-app" style="background: #fafafa">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="hidden-md-down">
+                        <div class="white-space" style="padding: 30px 0"></div>
+                    </div>
+                    <div class="section-title">
+                        <h1>Download Our Trading App</h1>
+                    </div>
+                    <div class="white-space" style="padding: 15px 0"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint accusamus tempora velit perferendis tempore pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint accusamus tempora velit perferendis tempore pariatur, consequuntur magni eveniet vel maxime nihil, harum nesciunt!</p>
+                    <div class="white-space" style="padding: 15px 0"></div>
+                    <div class="button">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-apple"></i>Apple</a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-android"></i>Android</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 offset-sm-2">
+                    <div class="hidden-sm-down">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/app-mockup-4.png" alt="Mobile">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.section-->
+
+    <!--.section-->
+    <section class="section-call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="section-title">
+                        <h2>Buy Sell and Exchange store bitcoin with confidence</h2>
+                    </div>
+                    <div class="white-space" style="padding: 5px 0"></div>
+                    <p>
+                        eaque et perspiciatis eos, nisi id non! Voluptates omnis doloremque, officia, voluptatibus eius eum repellat delectus at assumenda iste aut tempora fugit amet culpa, laudantium ipsa dolorum fuga, possimus eveniet voluptatum.</p>
+                    <div class="white-space" style="padding: 5px 0"></div>
+                    <div class="button">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Know More</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="hidden-sm-up">
+                        <div class="white-space" style="padding: 25px 0"></div>
+                    </div>
+                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/bitcoins.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.section-->
+
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Get in Touch</h5>
+                            <div class="widget_content">
+                                <ul>
+                                    <li><i class="fa fa-lg fa-map-marker"></i>125 East 11th Street, Parkway Nashville 22536</li>
+                                    <li><i class="fa fa-lg fa-mobile"></i>+123 4567 890</li>
+                                    <li><i class="fa fa-lg fa-envelope-o"></i>info@example.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Important links</h5>
+                            <div class="widget_content">
+                                <ul>
+                                    <li><a href="#">Bitcoin Mining</a></li>
+                                    <li><a href="#">Bitcoin Earning</a></li>
+                                    <li><a href="#">Investment</a></li>
+                                    <li><a href="#">Referral</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Recent Post</h5>
+                            <div class="widget_content">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="widget_recent_post">
+                                                <div class="widget_recent_post_img">
+                                                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog5.jpeg" alt="Image">
+                                                </div>
+                                                <div class="widget_recent_post_content">
+                                                    <h6>Laborum deleniti sequi, consequuntur</h6>
+                                                    <small>12 dec 2017</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="widget_recent_post">
+                                                <div class="widget_recent_post_img">
+                                                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog2.jpeg" alt="Image">
+                                                </div>
+                                                <div class="widget_recent_post_content">
+                                                    <h6>Deleniti sequi, consequuntur</h6>
+                                                    <small>16 dec 2017</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Newsletter</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div class="widget_content">
+                                <form action="#">
+                                    <input type="email">
+                                    <input type="submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Home</a></li>
+                            <li class="list-inline-item"><a href="#">About</a></li>
+                            <li class="list-inline-item"><a href="#">Services</a></li>
+                            <li class="list-inline-item"><a href="#">Team</a></li>
+                            <li class="list-inline-item"><a href="#">Blog</a></li>
+                            <li class="list-inline-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="pull-right">All Right Reserved by <a href="codecorns.com">CodeCorns</a> © 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
+
+
+    <!--======= Back to Top =======-->
+
+    <div id="backtotop"><i class="fa fa-2x fa-arrow-up"></i></div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/countdown.js"></script> -->
+    <script src="assets/js/jquery-waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <!-- <script src="assets/js/google-map.js"></script> -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myApp" data-ng-controller="myCtrl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Title-->
+    <title>Home v2 - BitCoin</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/preset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" id="triggerColor" href="assets/css/colors/solid/color.css">
+    <link rel="stylesheet" id="grad_triggerColor" href="assets/css/colors/gradient/color.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <!-- Color Preset -->
+    <div class="rishad_switcher_zone">
+        <div class="switZone_title">
+            <p class="pull-left">Select a Color</p>
+            <a href="#" class="settingBtn pull-right"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            <div class="clearfix"></div>
+        </div>
+        <div class="rishad_switcher_inner">
+            <div class="rishad_switcher_single">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a href="#gradient" class="nav-link active" data-toggle="tab">Gradient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#solid" class="stopped-color nav-link" data-toggle="tab">Solid</a>
+                    </li>                    
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="gradient">
+                        <div class="rishad_switch grad_color" id="grad_actionColors">
+                            <a href="color" class="color-default active"></a>
+                            <a href="color-1" class="color1"></a>
+                            <a href="color-2" class="color2"></a>
+                            <a href="color-3" class="color3"></a>
+                            <a href="color-4" class="color4"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="solid">
+                        <div class="rishad_switch" id="actionColors">
+                            <a href="color" class="color-default active"></a>
+                            <a href="color-1" class="color1"></a>
+                            <a href="color-2" class="color2"></a>
+                            <a href="color-3" class="color3"></a>
+                            <a href="color-4" class="color4"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Color Preset -->
+
+    <!--navbar-->
+    <nav class="navbar navbar-toggleable-md fixed-top navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+      </button>
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/images/logo.png" alt="Logo"></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center mx-auto">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.html">Home 1</a>
+                        <a class="dropdown-item" href="index_v2.html">Home 2</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="shop-grid.html">Shop Grid</a>
+                        <a class="dropdown-item" href="shop-list.html">Shop List</a>
+                        <a class="dropdown-item" href="product.html">Product</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">News</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="single.html">Single</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="about.html">About</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="join-btn" type="button">Join Now</button>
+            </form>
+        </div>
+    </nav>
+    <!--/.navbar-->
+
+    <!-- particles.js container -->
+    <div id="particles-js" class="particles-js-img-2">
+        <div class="container">
+            <div class="particles_content">
+                <div class="col-sm-12">
+                    <h2>Most Sequre & Easy to Trade Bitcoin - The Next World Crypto Currency</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur hic facere corporis provident ea, dicta itaque, aut.</p>
+                    <div class="particles_button">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Get Started</a></li>
+                            <li class="list-inline-item"><a href="#">Knowmore</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /#particles.js -->
+
+    <!--#about-->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="coin-stat-bar list-inline text-center">
+                        <li class="list-inline-item"><i class="fa fa-3x fa-bitcoin"></i>
+                            <h6>1 = {{coinPrice['0'].name}}</h6>
+                        </li>
+                        <li class="list-inline-item"><i class="fa fa-3x fa-dollar"></i>
+                            <h6>{{coinPrice['0'].price_usd}} = USD</h6>
+                        </li>
+                        <li class="list-inline-item"><i class="fa fa-3x fa-bar-chart"></i>
+                            <h6>Today</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                    <div class="white-space" style="padding: 35px 0"></div>
+                </div>
+
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/bitcoins.png" alt="image">
+                    <div class="hidden-sm-up">
+                        <div class="white-space" style="padding: 25px 0"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="wbitcoin">
+                        <div class="section-title">
+                            <h2>What is BitCoin ?</h2>
+                        </div>
+
+                        <div class="white-space" style="padding: 15px 0"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quod voluptas consequatur distinctio ut quibusdam illum suscipit,
+                            <br>
+                            <br> eaque et perspiciatis eos, nisi id non! Voluptates omnis doloremque, officia, voluptatibus eius eum repellat delectus at assumenda iste aut tempora fugit amet culpa, laudantium ipsa dolorum fuga, possimus eveniet voluptatum. Nisi architecto animi, accusamus expedita pariatur. Suscipit ipsam repellat porro explicabo dignissimos.</p>
+                        <div class="white-space" style="padding: 10px 0"></div>
+                        <div class="button">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">Learnmore</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--/#about-->
+
+    <!--#ico-->
+    <section id="ico" class="section" style="background: url(assets/images/countdown.jpg); color: #fff">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title text-center">
+                        <h1>Time Until ICO Close</h1>
+                    </div>
+                    <div class="white-space" style="padding: 35px 0"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="cditem">
+                        <span class="days" data-days="May 1 , 2018"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="cditem">
+                        <span class="hours" data-hours="15"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="cditem">
+                        <span class="minutes" data-minutes="37"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="cditem">
+                        <span class="seconds" data-seconds="25"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 text-center offset-sm-4">
+                    <div class="contribute">
+                        <h5>Funds Collected</h5>
+                        <span>28,345,402.60</span>
+                        <div class="button">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">Contribute Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#ico-->
+
+
+    <!--#wallet-->
+    <section id="wallet" class="section" style="background: #fafafa">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="section-title">
+                        <h2>Steps to Get Started to Buy and Sell Bitcoin</h2>
+                    </div>
+                    <div class="white-space" style="padding: 25px 0"></div>
+                    <div class="single-feature">
+                        <div class="feature-icon">
+                            <i class="fa fa-lg fa-paper-plane"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Add a Walet</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ea culpa aperiam!</p>
+                        </div>
+                    </div>
+                    <div class="single-feature">
+                        <div class="feature-icon">
+                            <i class="fa fa-lg fa-briefcase"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Add Bitcoin to a Wallet</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ea culpa aperiam!</p>
+                        </div>
+                    </div>
+                    <div class="single-feature">
+                        <div class="feature-icon">
+                            <i class="fa fa-lg fa-thumbs-up"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Send/Receive with Wallet</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ea culpa aperiam!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-sm-2 col-sm-4">
+                    <div class="white-space" style="padding: 50px 0"></div>
+                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/wallet.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#wallet-->
+
+    <!--.section-->
+    <section class="section" style="background: url(assets/images/middle-bnr.jpeg); color: #fff">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="section-title">
+                        <h1>Request fo Call Back</h1>
+                    </div>
+                    <div class="white-space" style="padding: 15px 0"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusamus doloremque asperiores voluptatibus totam.</p>
+                    <strong>Working Hours: 9:00 AM To 5:00 PM</strong>
+                    <div class="hidden-sm-up">
+                        <div class="white-space" style="padding: 25px 0"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <form action="#" class="call-back-form">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="white-space" style="padding: 8px 0"></div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Message">
+                            </div>
+                        </div>
+                        <div class="white-space" style="padding: 8px 0"></div>
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control" type="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.section-->
+
+    <!--.section-->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title text-center">
+                        <h1>Services We Provide</h1>
+                    </div>
+                    <div class="white-space" style="padding: 35px 0"></div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="info_box_v1 text-center">
+                        <div class="info_box_v1_icon">
+                            <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/bitcoin.png" alt="icon">
+                        </div>
+                        <div class="info_box_v1_content">
+                            <h5>Bitcoin Mining</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quisquam architecto deserunt!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="info_box_v1 text-center">
+                        <div class="info_box_v1_icon">
+                            <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/dollar.png" alt="icon">
+                        </div>
+                        <div class="info_box_v1_content">
+                            <h5>Bitcoin Transiction</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quisquam architecto deserunt!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="info_box_v1 text-center">
+                        <div class="info_box_v1_icon">
+                            <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/profits.png" alt="icon">
+                        </div>
+                        <div class="info_box_v1_content">
+                            <h5>Bitcoin Exchange</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quisquam architecto deserunt!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 text-center">
+
+                    <div class="white-space" style="padding: 25px 0"></div>
+                    <div class="button">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">More Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.section-->
+
+    <!--.section-->
+    <section class="section" style="background: #fafafa">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/multidevice.png" alt="img">
+                    <div class="hidden-sm-up">
+                        <div class="white-space" style="padding: 25px 0"></div>
+                    </div>
+                </div>
+                <div class="col-sm-5 offset-sm-1">
+                    <div class="section-title">
+                        <h2>Use Our Software & Mobile App For Easy Trading</h2>
+                    </div>
+                    <div class="white-space" style="padding: 15px 0"></div>
+                    <p>
+                        eaque et perspiciatis eos, nisi id non! Voluptates omnis doloremque, officia, voluptatibus eius eum repellat delectus at assumenda iste aut tempora fugit amet culpa, laudantium ipsa dolorum fuga, possimus eveniet voluptatum.</p>
+                    <div class="white-space" style="padding: 10px 0"></div>
+                    <div class="button">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Download Now</a></li>
+                            <li class="list-inline-item"><a href="#">Live Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.section-->
+
+    <!--.section-->
+    <section class="section-call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="section-title">
+                        <h2>Buy Sell and Exchange store bitcoin with confidence</h2>
+                    </div>
+                    <div class="white-space" style="padding: 5px 0"></div>
+                    <p>
+                        eaque et perspiciatis eos, nisi id non! Voluptates omnis doloremque, officia, voluptatibus eius eum repellat delectus at assumenda iste aut tempora fugit amet culpa, laudantium ipsa dolorum fuga, possimus eveniet voluptatum.</p>
+                    <div class="white-space" style="padding: 5px 0"></div>
+                    <div class="button">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Know More</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="hidden-sm-up">
+                        <div class="white-space" style="padding: 25px 0"></div>
+                    </div>
+                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/bitcoins.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.section-->
+
+    <!--#exchange-->
+    <section id="exchange" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="exch_section">
+                        <div class="section-title">
+                            <h2>BTC Exchange calculator:</h2>
+                        </div>
+                        <div class="white-space" style="padding: 5px 0"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam doloremque ea necessitatibus corrupti, maxime minima exercitationem. Incidunt dolorem quibusdam fugit, similique illo, quas hic, voluptatibus voluptates, unde deleniti molestiae ipsa.</p>
+                        <div class="white-space" style="padding: 10px 0"></div>
+                        <script src="https://www.cryptonator.com/ui/js/widget/calc_widget.js"></script>
+                    </div>
+                    <div class="hidden-sm-up">
+                        <div class="white-space" style="padding: 25px 0"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="exch_section">
+                        <div class="section-title">
+                            <h2>Most Popular Coin:</h2>
+                        </div>
+                        <div class="white-space" style="padding: 5px 0"></div>
+
+                        <div class="coinmarketcap-currency-widget" data-currency="bitcoin" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
+
+                        <div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="white-space" style="padding: 50px 0"></div>
+                    <!--#tradingview-->
+                    <div id="tradingview">
+                        <div class="container">
+                            <script src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                                {
+                                    "width": "100%",
+                                    "height": "500",
+                                    "defaultColumn": "overview",
+                                    "screener_type": "crypto_mkt",
+                                    "displayCurrency": "USD",
+                                    "locale": "en"
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <!--/#tradingview-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#exchange-->
+
+    <!--section-->
+    <div class="section" style="background: url(assets/images/bitcoin-partner.jpeg); color: #ccc">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 partner-carousel">
+                    <div>
+                        <a href="#">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/partners/01.png" alt="Partner">
+                           </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/partners/02.png" alt="Partner">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/partners/03.png" alt="Partner">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/partners/04.png" alt="Partner">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/partners/05.png" alt="Partner">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/partners/06.png" alt="Partner">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/partners/07.png" alt="Partner">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section-->
+
+    <!--feedback-->
+    <section id="feedback" class="section" style="background: #fafafa">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title text-center">
+                        <h1>Feedback From Our Investor</h1>
+                    </div>
+                    <div class="white-space" style="padding: 35px 0"></div>
+                </div>
+            </div>
+            <div class="row testimonials">
+                <div class="col-sm-4">
+                    <div class="testimonial">
+                        <img class="img-fluid rounded-circle" src="assets/images/spinner.gif" data-src="assets/images/faces/01.jpg" alt="Face">
+                        <div class="testimonial-content">
+                            <h4>Maria Mehnaj</h4>
+                            <small>Soft Eng _Microsoft</small>
+                            <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nisi non quibusdam, id error delectus.
+                                <i class="fa fa-quote-right"></i></p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="testimonial">
+                        <img class="img-fluid rounded-circle" src="assets/images/spinner.gif" data-src="assets/images/faces/02.jpg" alt="Face">
+                        <div class="testimonial-content">
+                            <h4>Anushka</h4>
+                            <small>Soft Eng _Microsoft</small>
+                            <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nisi non quibusdam, id error delectus.
+                                <i class="fa fa-quote-right"></i></p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="testimonial">
+                        <img class="img-fluid rounded-circle" src="assets/images/spinner.gif" data-src="assets/images/faces/03.jpg" alt="Face">
+                        <div class="testimonial-content">
+                            <h4>Faria Shobnom</h4>
+                            <small>Soft Eng _Microsoft</small>
+                            <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nisi non quibusdam, id error delectus.
+                                <i class="fa fa-quote-right"></i></p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="testimonial">
+                        <img class="img-fluid rounded-circle" src="assets/images/spinner.gif" data-src="assets/images/faces/04.jpg" alt="Face">
+                        <div class="testimonial-content">
+                            <h4>Nayma</h4>
+                            <small>Soft Eng _Microsoft</small>
+                            <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nisi non quibusdam, id error delectus.
+                                <i class="fa fa-quote-right"></i></p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="testimonial">
+                        <img class="img-fluid rounded-circle" src="assets/images/spinner.gif" data-src="assets/images/faces/05.jpg" alt="Face">
+                        <div class="testimonial-content">
+                            <h4>Malala Yousuf</h4>
+                            <small>Soft Eng _Microsoft</small>
+                            <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nisi non quibusdam, id error delectus.
+                                <i class="fa fa-quote-right"></i></p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="testimonial">
+                        <img class="img-fluid rounded-circle" src="assets/images/spinner.gif" data-src="assets/images/faces/06.jpg" alt="Face">
+                        <div class="testimonial-content">
+                            <h4>Khadiza</h4>
+                            <small>Soft Eng _Microsoft</small>
+                            <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nisi non quibusdam, id error delectus.
+                                <i class="fa fa-quote-right"></i></p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#feedback-->
+
+    <!--section-->
+    <section class="section-count">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="counter_v1">
+                        <i class="fa fa-4x fa-users"></i>
+                        <span class="count">23</span><span>k</span>
+                        <h5>Contributor</h5>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="counter_v1">
+                        <i class="fa fa-4x fa-money"></i>
+                        <span class="count">1352</span>
+                        <h5>Investor</h5>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="counter_v1">
+                        <i class="fa fa-4x fa-bitcoin"></i>
+                        <span>$</span><span class="count">3.3</span><span>M</span>
+                        <h5>Bitcoin Trade</h5>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="counter_v1">
+                        <i class="fa fa-4x fa-headphones"></i>
+                        <span class="count">28.5</span><span>k</span>
+                        <h5>Customer Served</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.section-->
+
+
+
+    <!--section-->
+    <section class="section-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="hidden-md-down">
+                        <div class="white-space" style="padding: 40px 0"></div>
+                    </div>
+                    <div class="section-title">
+                        <h1>Download Our Trading App</h1>
+                    </div>
+                    <div class="white-space" style="padding: 15px 0"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint accusamus tempora velit perferendis tempore pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint accusamus tempora velit perferendis tempore pariatur, consequuntur magni eveniet vel maxime nihil, harum nesciunt!</p>
+                    <div class="white-space" style="padding: 15px 0"></div>
+                    <div class="button">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-apple"></i>Apple</a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-android"></i>Android</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 offset-sm-2">
+                    <div class="hidden-sm-down">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/app-mockup-4.png" alt="Mobile">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.section-->
+
+    <!--#news-->
+    <section id="news" class="section" style="background: #fafafa">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title text-center">
+                        <h1>Recent Updates &amp; News</h1>
+                    </div>
+                    <div class="white-space" style="padding: 35px 0"></div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="post_v1">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog1.jpeg" alt="Image">
+                        <div class="post_v1_content">
+                            <h5>Est nostrum nulla</h5>
+                            <span>Posted <strong>12 Dec 2017</strong> By <strong>Satoshi Nakamoto</strong></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nostrum nulla, consequatur, sunt reprehenderit ex.</p>
+                            <a href="#">Readmore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="post_v1">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog2.jpeg" alt="Image">
+                        <div class="post_v1_content">
+                            <h5>Sunt reprehenderit ex</h5>
+                            <span>Posted <strong>12 Dec 2017</strong> By <strong>Satoshi Nakamoto</strong></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nostrum nulla, consequatur, sunt reprehenderit ex.</p>
+                            <a href="#">Readmore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="post_v1">
+                        <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog4.jpeg" alt="Image">
+                        <div class="post_v1_content">
+                            <h5>Consectetur adipisicing elit</h5>
+                            <span>Posted <strong>12 Dec 2017</strong> By <strong>Satoshi Nakamoto</strong></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nostrum nulla, consequatur, sunt reprehenderit ex.</p>
+                            <a href="#">Readmore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#news-->
+
+    <!--section-->
+    <section class="section" style="background: url(assets/images/bitcoin-footer.jpg); color: #fff">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title text-center">
+                        <h1>Open Your Trading Account!</h1>
+                    </div>
+
+                    <div class="white-space" style="padding: 25px 0"></div>
+
+                    <form action="#" class="create_account">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                        </div>
+
+                        <div class="button text-center">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">Create Account</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/.section-->
+
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Get in Touch</h5>
+                            <div class="widget_content">
+                                <ul>
+                                    <li><i class="fa fa-lg fa-map-marker"></i>125 East 11th Street, Parkway Nashville 22536</li>
+                                    <li><i class="fa fa-lg fa-mobile"></i>+123 4567 890</li>
+                                    <li><i class="fa fa-lg fa-envelope-o"></i>info@example.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Important links</h5>
+                            <div class="widget_content">
+                                <ul>
+                                    <li><a href="#">Bitcoin Mining</a></li>
+                                    <li><a href="#">Bitcoin Earning</a></li>
+                                    <li><a href="#">Investment</a></li>
+                                    <li><a href="#">Referral</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Recent Post</h5>
+                            <div class="widget_content">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="widget_recent_post">
+                                                <div class="widget_recent_post_img">
+                                                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog5.jpeg" alt="Image">
+                                                </div>
+                                                <div class="widget_recent_post_content">
+                                                    <h6>Laborum deleniti sequi, consequuntur</h6>
+                                                    <small>12 dec 2017</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="widget_recent_post">
+                                                <div class="widget_recent_post_img">
+                                                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog2.jpeg" alt="Image">
+                                                </div>
+                                                <div class="widget_recent_post_content">
+                                                    <h6>Deleniti sequi, consequuntur</h6>
+                                                    <small>16 dec 2017</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="widget">
+                            <h5>Newsletter</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div class="widget_content">
+                                <form action="#">
+                                    <input type="email">
+                                    <input type="submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Home</a></li>
+                            <li class="list-inline-item"><a href="#">About</a></li>
+                            <li class="list-inline-item"><a href="#">Services</a></li>
+                            <li class="list-inline-item"><a href="#">Team</a></li>
+                            <li class="list-inline-item"><a href="#">Blog</a></li>
+                            <li class="list-inline-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="pull-right">All Right Reserved by <a href="codecorns.com">CodeCorns</a> © 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
+
+
+    <!--======= Back to Top =======-->
+
+    <div id="backtotop"><i class="fa fa-2x fa-arrow-up"></i></div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/jquery-waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/currency.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- <script src="assets/js/google-map.js"></script> -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

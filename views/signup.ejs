@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Stock Market Analysis </title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/util.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+  <script src="angularjs/signupController.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="signupController">
+    <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+        <form class="login100-form validate-form">
+          <span class="login100-form-title p-b-55">
+            Register
+          </span>
+          <div ng-show="firstnamerequired" style="color:red">First name is required.</div>
+          <div class="wrap-input100 validate-input m-b-16" data-validate = "First Name is required">
+            <input class="input100" type="text" name="firstName" placeholder="First Name" ng-model="firstname">
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <span class="lnr lnr-user"></span>
+            </span>
+          </div>
+
+
+          <div ng-show="lastnamerequired" style="color:red">Last name is required.</div>
+         <div class="wrap-input100 validate-input m-b-16" data-validate = "Last Name is required">
+            <input class="input100" type="text" name="lastName" placeholder="Last Name" ng-model="lastname">
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <span class="lnr lnr-user"></span>
+            </span>
+          </div>
+          <div ng-show="phonerequired" style="color:red">Phone Number is required.</div>
+          <div class="wrap-input100 validate-input m-b-16" data-validate = "Phone Number is required">
+            <input class="input100" type="text" name="phoneNumber" placeholder="Phone Number" ng-model="phonenumber">
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <span class="lnr lnr-phone"></span>
+            </span>
+          </div>
+
+          <div ng-show="emailrequired" style="color:red">Email is required.</div>
+          <div ng-show="emailexists" style="color:red">Email already exists.</div>
+          <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">
+            <input class="input100" type="text" name="email" placeholder="Email" ng-model="email">
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <span class="lnr lnr-envelope"></span>
+            </span>
+          </div>
+          
+          <div ng-show="passwordrequired" style="color:red">Password is required.</div>
+          <div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+            <input class="input100" type="password" name="password" placeholder="Password" ng-model="password">
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <span class="lnr lnr-lock"></span>
+            </span>
+          </div>
+
+          <div class="container-login100-form-btn p-t-25">
+            <button class="login100-form-btn" ng-click="btn_signup()">
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+</html>

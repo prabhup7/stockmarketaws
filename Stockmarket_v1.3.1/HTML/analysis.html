@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myAnalyze" data-ng-controller="analyzeController">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Site Title-->
+  <title>Home - StockMarket</title>
+  <!-- Favicon-->
+
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/preset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900" rel="stylesheet">
+
+
+  <link rel="stylesheet" id="triggerColor" href="assets/css/colors/solid/color.css">
+  <link rel="stylesheet" id="grad_triggerColor" href="assets/css/colors/gradient/color.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+  <!-- Color Preset -->
+  <div class="rishad_switcher_zone">
+    <div class="switZone_title">
+      <p class="pull-left">Select a Color</p>
+      <a href="#" class="settingBtn pull-right"><i class="fa fa-cog" aria-hidden="true"></i></a>
+      <div class="clearfix"></div>
+    </div>
+    <div class="rishad_switcher_inner">
+      <div class="rishad_switcher_single">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a href="#gradient" class="nav-link active" data-toggle="tab">Gradient</a>
+          </li>
+          <li class="nav-item">
+            <a href="#solid" class="stopped-color nav-link" data-toggle="tab">Solid</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="gradient">
+            <div class="rishad_switch grad_color" id="grad_actionColors">
+              <a href="color" class="color-default active"></a>
+              <a href="color-1" class="color1"></a>
+              <a href="color-2" class="color2"></a>
+              <a href="color-3" class="color3"></a>
+              <a href="color-4" class="color4"></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="tab-pane" id="solid">
+            <div class="rishad_switch" id="actionColors">
+              <a href="color" class="color-default active"></a>
+              <a href="color-1" class="color1"></a>
+              <a href="color-2" class="color2"></a>
+              <a href="color-3" class="color3"></a>
+              <a href="color-4" class="color4"></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/Color Preset -->
+
+  <!--navbar-->
+  <nav class="navbar navbar-toggleable-md fixed-top navbar-light shrink">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/images/stocklogo.png" alt="Logo"></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-center mx-auto">
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown">Home</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item active" href="index.html">Home 1</a>
+            <a class="dropdown-item" href="index_v2.html">Home 2</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-scroll href="#about">
+            Analyze By Sector</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll href="#services">Analyze By year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll href="#exchange">Analyze By Company</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--/.navbar-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="white-space" style="padding: 35px 0"></div>
+        </div>
+        <div class="col-sm-12">
+          <div class="white-space" style="padding: 35px 0"></div>
+        </div>
+        <div class="col-sm-12">
+          <div class="white-space" style="padding: 35px 0"></div>
+        </div>
+        <label class="displayBlock margin">Select Sector</label>
+
+        <select class="form-control" ng-model="selectedSector">
+          <option disabled selected value>-- Select an option --</option>
+          <option>Basic Industries</option>
+          <option>Capital Goods</option>
+          <option>Consumer Durables</option>
+          <option>Consumer Non-Durables</option>
+          <option>Consumer Services</option>
+          <option>Energy</option>
+          <option>Health Care</option>
+          <option>Miscellaneous</option>
+          <option>Others</option>
+          <option>Public Utilities</option>
+          <option>Technology</option>
+          <option>Transportation</option>
+        </select>
+        <div class="white-space" style="padding: 10px 0"></div>
+        <div class="row">
+          <div class="button">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="btn btn-primary add-contract-button pull-right" ng-click="showSectorStats()">Show Analysis</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript"
+src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+
+<!--body onload="initViz();"-->
+<div class="container" >
+    <div class="row">
+<div id="vizContainer" style="width:800px; height:700px;"></div>
+</div>
+</div>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/tether.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/countdown.js"></script>
+<script src="assets/js/jquery-waypoints.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/smooth-scroll.min.js"></script>
+<script src="assets/js/particles.min.js"></script>
+<script src="assets/js/jtline.min.js"></script>
+<script src="assets/js/currency.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/analyze.js"></script>
+<!-- <script src="assets/js/google-map.js"></script> -->
+<script src="assets/js/roadmap.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+</body>
