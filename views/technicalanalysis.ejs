@@ -76,41 +76,41 @@
 
   <!--navbar-->
   <nav class="navbar navbar-toggleable-md fixed-top navbar-light">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-      </button>
-        <a class="navbar-brand" href="/"><img class="img-fluid" src="assets/images/stocklogo.png" alt="Logo"></a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-center mx-auto">
-                <!-- Dropdown -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/userhome">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="/sectoranalysis">
-                  Analyze By Sector</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/yearanalysis">Analyze By year</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/companyanalysis">Analyze By Company</a>
-                </li>
-              </ul>
-                <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><%= firstName %> <%= lastName %></a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/profile">My Profile</a>
-                        <a class="dropdown-item" href="/logout">Logout</a>
-                    </div>
-                </li>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/"><img class="img-fluid" src="assets/images/stocklogo.png" alt="Logo"></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-center mx-auto">
+        <!-- Dropdown -->
+        <li class="nav-item">
+          <a class="nav-link" href="/userhome">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sectoranalysis">
+            Analyze By Sector</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/yearanalysis">Analyze By year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/companyanalysis">Analyze By Company</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><%= firstName %> <%= lastName %></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/profile">My Profile</a>
+              <a class="dropdown-item" href="/logout">Logout</a>
+            </div>
+          </li>
 
-            </ul>
-        </div>
+        </ul>
+      </div>
     </nav>
     <!--/.navbar-->
- <div class="container">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="white-space" style="padding: 35px 0"></div>
@@ -121,107 +121,230 @@
         <div class="col-sm-12">
           <div class="white-space" style="padding: 35px 0"></div>
         </div>
-        <img src="images/ClosingPrice.png" width="460" height="345">
-        
-        <br /><br /><br />
-        <img src="images/Volume.png" width="460" height="345">
-        <img src="images/Moving-Average.png" width="460" height="345">
-        <img src="images/MonteCarlo.png" width="460" height="345">
-        <img src="images/Risk.png" width="460" height="345">
-        <div class="white-space" style="padding: 10px 0"></div>
-        
+      </div>
     </div>
+
+    <div class="center">
+      <div class="container" >
+        <div class="row">
+          <div class="section-title text-center">
+            <div class="risk">
+            <h1> Risk Analysis</h1>
+          </div>
+          </div>
+          <div class="info_box_v1">
+            <div class="col-md-12">
+              <div id='myChart'>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="info_box_v1">
+          <div class="col-md-5">
+            <div class="section-title text-center">
+              <div class="closing">
+              <h1> Closing Price </h1>
+            </div>
+              <img src="images/ClosingPrice.png" width="460" height="345">
+            </div>
+          </div>
+        </div>
+
+        <div class="info_box_v1">
+          <div class="col-md-7">
+            <div class="section-title text-center">
+              <h1> Total Volume of Stock Traded</h1>
+              <img src="images/Volume.png" width="460" height="345">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="container" >
+        <div class="row">
+          <div class="section-title text-center">
+            <h1> Moving Averages </h1>
+          </div>
+          <div class="info_box_v1">
+            <div class="col-md-12">
+              <img src="images/Moving-Average.png" width="460" height="345">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+
+        <div class="info_box_v1">
+          <div class="col-md-6">
+            <div class="section-title text-center">
+              <h1> Monte Carlo Analysis </h1>
+              <img src="images/MonteCarlo.png" width="460" height="345">
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="info_box_v1">
+          <div class="col-md-6">
+            <div class="section-title text-center">
+              <h1> Value at Risk </h1>
+              <img src="images/Risk.png" width="460" height="345">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script>
+    var risk = <%= risk %>;
+    var sPrice = <%= startPrice %>;
+    var tempVar = (risk/sPrice) * 100;
+    var finalVar;
+
+    if(tempVar >= 35)
+    finalVar = 5;
+    else if(tempVar >= 30)
+    finalVar = 24;
+    else if(tempVar >= 20)
+    finalVar = 40;
+    else if(tempVar >= 15)
+    finalVar = 60;
+    else
+    finalVar = 75;
+    var myConfig8 = {
+      "type":"gauge",
+      "scale-r":{
+        "aperture":200,
+        "values":"0:80:20",
+        "center":{
+          "size":10,
+          "background-color":"#66CCFF #FFCCFF",
+          "border-color":"none"
+        },
+        "ring":{
+          "size":15,
+          "rules":[
+            {
+              "rule":"%v >= 0 && %v <= 20",
+              "background-color":"red"
+            },
+            {
+              "rule":"%v >= 20 && %v <= 40",
+              "background-color":"orange"
+            },
+            {
+              "rule":"%v >= 40 && %v <= 60",
+              "background-color":"yellow"
+            },
+            {
+              "rule":"%v >= 60 && %v <= 80",
+              "background-color":"green"
+            },
+            {
+              "rule":"%v >= 80 && %v <=100",
+              "background-color":"blue"
+            }
+          ]
+        },
+        "labels":["Very High Risk","High Risk","Neutral","Low Risk","Very Low Risk"],  //Scale Labels
+        "item":{  //Scale Label Styling
+          "font-color":"purple",
+          "font-family":"Georgia, serif",
+          "font-size":11,
+          "font-weight":"bold",   //or "normal"
+          "font-style":"normal",   //or "italic"
+          "offset-r":0,
+          "angle":""
+        }
+      },
+      "plot":{
+        "csize":"5%",
+        "size":"100%",
+        "background-color":"#000000",
+        "animation":{ //Animation object
+          "effect":2,
+          "method":3,
+          "sequence":1,
+          "speed":3000
+        }
+      },
+      "series":[
+        {"values":[finalVar]}
+      ]
+    };
+
+    zingchart.render({
+      id : 'myChart',
+      data : myConfig8,
+      height : "70%",
+      width: "85%"
+    });
+
+    </script>
   </div>
+  <div class="white-space" style="padding: 10px 0"></div>
+
 </div>
-<br />  
+</div>
+</div>
+<br />
 
 <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="widget">
-                            <h5>Get in Touch</h5>
-                            <div class="widget_content">
-                                <ul>
-                                    <li><i class="fa fa-lg fa-map-marker"></i>San Jose State University</li>
-                                    <li><i class="fa fa-lg fa-mobile"></i>+123 4567 890</li>
-                                    <li><i class="fa fa-lg fa-envelope-o"></i>stockmarketanalysisteam@example.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="widget">
-                            <h5>Recent Post</h5>
-                            <div class="widget_content">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <div class="widget_recent_post">
-                                                <div class="widget_recent_post_img">
-                                                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog5.jpeg" alt="Image">
-                                                </div>
-                                                <div class="widget_recent_post_content">
-                                                    <h6>Laborum deleniti sequi, consequuntur</h6>
-                                                    <small>12 dec 2017</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="widget_recent_post">
-                                                <div class="widget_recent_post_img">
-                                                    <img class="img-fluid" src="assets/images/spinner.gif" data-src="assets/images/blog/blog2.jpeg" alt="Image">
-                                                </div>
-                                                <div class="widget_recent_post_content">
-                                                    <h6>Deleniti sequi, consequuntur</h6>
-                                                    <small>16 dec 2017</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="widget">
-                            <h5>Newsletter</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <div class="widget_content">
-                                <form action="#">
-                                    <input type="email">
-                                    <input type="submit">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="widget">
+            <h5>Get in Touch</h5>
+            <div class="widget_content">
+              <ul>
+                <li><i class="fa fa-lg fa-map-marker"></i>San Jose State University</li>
+                <li><i class="fa fa-lg fa-mobile"></i>+123 4567 890</li>
+                <li><i class="fa fa-lg fa-envelope-o"></i>stockmarketanalysisteam@example.com</li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="footer_bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#">Home</a></li>
-                            <li class="list-inline-item"><a href="#">About</a></li>
-                            <li class="list-inline-item"><a href="#">Services</a></li>
-                            <li class="list-inline-item"><a href="#">Team</a></li>
-                            <li class="list-inline-item"><a href="#">Blog</a></li>
-                            <li class="list-inline-item"><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="pull-right">All Right Reserved by <a href="stockmarketanalysis.com">Stock Market Analysis</a> © 2017</p>
-                    </div>
-                </div>
-            </div>
+  <div class="footer_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">Team</a></li>
+            <li class="list-inline-item"><a href="#">Blog</a></li>
+            <li class="list-inline-item"><a href="#">Contact</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="col-sm-6">
+          <p class="pull-right">All Right Reserved by <a href="stockmarketanalysis.com">Stock Market Analysis</a> © 2017</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -248,6 +371,3 @@
 </html>
 
 </body>
-
-
-
